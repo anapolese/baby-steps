@@ -1,0 +1,50 @@
+form {
+    padding: 40px 0 0 70px;
+}
+
+input, textarea {
+    outline: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    width: 500px;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    background: var(--azul-medio);
+    padding: 3px 10px;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    resize: none;
+}
+
+form button {
+    color: white;
+    display: inline-flex;
+    font-family: Poppins;
+    font-size: 15px;
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
+    background: var(--azul-medio);
+    margin-left: 281px;
+}
+
+span {
+    font-size: 12px;
+    display: inline;
+}
+
+aside:last-child{
+    margin-left: 1px;
+    padding-right: 20px;
+}
+
+
+iframe {
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 1px var(--azul-xcuro);
+}
+/* 
+#preloader {
+    position: fixed;
+} */
