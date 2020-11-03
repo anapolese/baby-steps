@@ -1,0 +1,62 @@
+#redes-sociais {
+    /* border: 1px solid greenyellow; */
+    margin-top: 100px;
+}
+
+#redes-sociais a {
+    border: 2px solid var(--cor-menu-hover);
+    /* o valor 50% transforma o elemento em uma esfera independente do seu tamanho */
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    transition: background 1s;
+}
+
+#redes-sociais a:hover {
+    background: var(--cor-menu-hover);
+    
+}
+
+#maquinaEs {
+    width: 580px;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    /* n quebra \/ os espaço entre as */
+    white-space: nowrap;
+    animation: typing 3.5s steps(29), curPisc .6s 8;
+}
+
+.DDOG {
+    width: 100%;
+    background: white;
+    padding: 9px 9px 80px 9px;
+    transform: rotate(10deg) translate(-25px, 50px);
+    box-shadow: 6px 6px 15px 1px var(--azul-xcuro);
+    border-radius: 3px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+       width: 570px;
+    }
+}
+
+@keyframes curPisc {
+    from,
+    to {
+        border-right: 5px solid white;
+    }
+
+    50% {
+        border-right: none;
+    }
+}
