@@ -8,10 +8,14 @@
     /* o valor 50% transforma o elemento em uma esfera independente do seu tamanho */
     border-radius: 50%;
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 49px;
+    width: 49px;
     margin-right: 20px;
     transition: background 1s;
+}
+
+#redes-sociais a:last-child {
+    margin-right: 0%;
 }
 
 #redes-sociais a:hover {

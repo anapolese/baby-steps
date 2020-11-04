@@ -4,16 +4,22 @@
     }
 
     header div nav {
-        width: 10%;
+        width: 100%;
     }
 
+    #redes-sociais a {
+        margin-right: 1%;
+    }
+    #redes-sociais a:last-child {
+        margin-right: 0%;
+    }
 
     .container {
         width: 100%;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 100%;
         animation: none;
     }
 
