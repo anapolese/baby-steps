@@ -1,0 +1,74 @@
+@media screen and (max-width: 1200px) {
+    body {
+        background-size: auto;
+        height: 100%;
+        margin: 0%;
+    }
+    
+    header {
+        width: 100%;
+    }
+
+    header div {
+        width: 70% !important;
+    }
+
+    #logo {
+        width: 20%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #burger div {
+        width: 50% !important;
+    }
+    
+
+    #containerHome {
+        width: 70%;
+        height: 90%;
+        margin: 1% 15%;
+    }
+
+    h1 {
+        font-size: 150%;
+        margin: 0 10%;
+    }
+    
+    .subP {
+        font-size: 90%;
+        padding: 0 5%;
+    }
+
+    h2 {
+        padding: 0 20%;
+    }
+
+    #projectsView {
+        height: 60%;
+    }
+
+    #projectsView a {
+        height: 30%;
+        font-size: 95%;
+        margin: 0%;
+        padding: 0 0 1% 0;
+    }
+
+    #projectsView p {
+        height: 25%;
+        margin-top: 0px;
+        margin-bottom: 0%;
+    }
+    
+    
+    #projects span {
+        font-size: 85%;
+    }
+}

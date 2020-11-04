@@ -60,6 +60,29 @@ header div {
     color: var(--font-color-hover);
 }
 
+#burger {
+    /* por padrao o burger n aparece na tela */
+    display: none;
+    width: 8%;
+    height: 3%;
+    border-radius: 50%;
+    padding: 8px 4px 5px 4px;
+    float: right;
+    margin-right: 0;
+  }
+  
+  #burger div {
+    width: 50%;
+    border-bottom: 2px solid var(--background-colorA);
+    margin-left: 3px;
+    margin-bottom: 6px;
+  }
+  /* active assim como hove é uma pseudo propriedade */
+  #burger:active div:nth-child(2) {
+    width: 25%;
+}
+
+
 /* ============== HEADER END ==============  */
 
 
@@ -93,7 +116,7 @@ h2 {
 }
 
 #projectsView a {
-    height: 30%;
+    C
     margin: 0%;
     padding: 0 0 1.5% 0;
 }
@@ -110,7 +133,8 @@ h2 {
 }
 
 
-#projects span {
+#projectsView span {
+    display: inline-block;
     font-size: 87%;
     margin-left: 3%;
 }
