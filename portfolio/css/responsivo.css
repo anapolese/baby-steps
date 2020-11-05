@@ -11,7 +11,7 @@
         margin-right: 1%;
     }
     #redes-sociais a:last-child {
-        margin-right: 0%;
+        margin-right: 0% !important;
     }
 
     .container {
@@ -19,7 +19,7 @@
     }
 
     h1 {
-        font-size: 100%;
+        font-size: 24px;
         animation: none;
     }
 
@@ -58,21 +58,13 @@
         display: block;
     }
     
-    form {
-        padding-left: 9%;
-    }
 
     input, textarea {
-        width: 87%;
+        width: 100%;
     }
-    form button {
-        display: inline-flex;
-        margin-left: 18%;
-    }
-
+  
     iframe {
-        width: 80%;
-        margin-left: 9%;
+        display: none;
     }
 
 }

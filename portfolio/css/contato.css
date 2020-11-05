@@ -1,37 +1,36 @@
-form {
-    padding: 40px 0 0 70px;
-}
-
-input, textarea {
+input, textarea, button {
     outline: none;
-    color: white;
-    font-family: Poppins;
-    font-size: 12px;
-    font-weight: 600;
-    width: 500px;
-    border: 2px solid rgb(165, 165, 165);
-    border-radius: 5px;
-    background: var(--azul-medio);
-    padding: 3px 10px;
+    color: var(--cor-menu-normal);
+    font-family: inherit;
+    width: 100%;
+    border: 1px solid var(--cor-menu-normal);
+    border-radius: 7px;
+    background: transparent;
+    padding: 8px;
     margin-bottom: 15px;
     letter-spacing: 1.5px;
     resize: none;
 }
 
-form button {
-    color: white;
-    display: inline-flex;
-    font-family: Poppins;
-    font-size: 15px;
-    border: 2px solid rgb(165, 165, 165);
-    border-radius: 5px;
-    background: var(--azul-medio);
-    margin-left: 281px;
+input:active,
+input:focus,
+textarea:active,
+textarea:focus,
+button:active,
+button:focus {
+  background-color: var(--cor-menu-normal);
+  color: var(--azul-xcuro);
+}
+
+button[type=submit] {
+    width: auto;
+    float: right;
 }
 
 span {
     font-size: 12px;
-    display: inline;
+    display: inline-block;
+    float: left;
 }
 
 aside:last-child{
@@ -39,12 +38,7 @@ aside:last-child{
     padding-right: 20px;
 }
 
-
 iframe {
     border-radius: 6px;
     box-shadow: 1px 1px 10px 1px var(--azul-xcuro);
 }
-/* 
-#preloader {
-    position: fixed;
-} */

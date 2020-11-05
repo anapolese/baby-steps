@@ -30,6 +30,8 @@ header {
   width: 100%;
   background: var(--azul-xcuro);
   /* min-height: 70px; */
+  /* workaround ("gambiarra")  */
+  /* display:"inline-table"*/
 }
 
 /* -70px da resolução total para barra de rolagem e bordas do nav */
