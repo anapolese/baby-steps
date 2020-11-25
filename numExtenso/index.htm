@@ -1,0 +1,33 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/numbers.js" defer></script>
+    <title>Números por Extenso</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>NÚMEROS POR EXTENSO</h1>
+
+           <p><label for="myRange">Escolha um número entre 0 e 999</label></p> 
+        
+       
+        <input type="range" oninput="updateValue()" value="500" id="myRange" name="myRange" min="0" max="999">
+
+
+        <!-- INPUT COM NÚMERO SELECIONADO EM NUMERAL -->
+        <p><label for="number">Número atual</label></p>
+        <input type="text" id="number" name="number" value="500" readonly disabled>
+
+
+        <!-- INPUT COM NÚMERO SELECIONADO ESCRITO POR EXTENSO -->
+        <p class="texto"><label for="writtenNumber">Número por Extenso</label></p>
+        <input type="text" id="writtenNumber" value="Quinhentos" name="writtenNumber"readonly disabled>
+
+    </div>
+</body>
+
+</html>
