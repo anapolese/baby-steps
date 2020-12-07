@@ -16,7 +16,7 @@ function updateValue() {
 function testNumber(a) {
     if (exceptions[a]) return exceptions[a];
     else if (a.length === 1) return unit(a);
-    else if (a.length === 2) return dezenas(a);
+    else if (a.length === 2) return ten(a);
     else if (a.length === 3) return hundred(a);
     else return 'Ops... Eu ainda não aprendi esse número'
 }
