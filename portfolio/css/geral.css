@@ -71,31 +71,29 @@ e estou usando varias vezes, seleciona um a clica f2  */
   color: var(--cor-menu-normal);
 }
 
+
 #burger {
   /* por padrao o burger n aparece na tela */
   display: none;
   width: 40px;
   height: 32px;
-  border: 1px solid white;
   padding: 8px 4px 0 4px;
   float: right;
   margin-right: 10px;
 }
 
 #burger div {
-  width: 80%;
   border-bottom: 1px solid white;
   margin-bottom: 10px;
 }
-/* active assim como hove é uma pseudo propriedade */
-#burger:active div:nth-child(2) {
-  width: 60%;
-
+/* active assim como hover é uma pseudo propriedade */ 
+#burger:hover div:nth-child(2),
+#burger:active div:nth-child(2):target {
+  width: 25px !important;
 }
 
 
 /* ============ Configuração conteudo do site ============ */
-
 
 
 .container {

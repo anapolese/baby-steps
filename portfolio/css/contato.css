@@ -1,3 +1,7 @@
+form {
+    max-width: 642px;
+}
+
 input, textarea, button {
     outline: none;
     color: var(--cor-menu-normal);
@@ -14,10 +18,13 @@ input, textarea, button {
 
 input:active,
 input:focus,
+input:hover,
 textarea:active,
 textarea:focus,
+textarea:hover,
 button:active,
-button:focus {
+button:focus,
+button:hover {
   background-color: var(--cor-menu-normal);
   color: var(--azul-xcuro);
 }
@@ -39,6 +46,9 @@ aside:last-child{
 }
 
 iframe {
+    border: none;
     border-radius: 6px;
+    width: 100%;
+    height: 50%;
     box-shadow: 1px 1px 10px 1px var(--azul-xcuro);
 }

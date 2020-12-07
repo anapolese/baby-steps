@@ -52,15 +52,35 @@
 
     #menu {
         display: none;
+        float: none;
+        margin-top: 1%;
+        position: absolute;
+    }
+
+    #menu a {
+        text-align: center;
+        display: block;
+        background: var(--azul-xcuro);
+    }
+
+    #menu a.ativo {
+        border-radius: 0;
+    }
+
+    #menu.mostraMenu {
+        display: block;
     }
 
     #burger {
         display: block;
     }
     
-
     input, textarea {
         width: 100%;
+    }
+
+    form {
+        margin: 0 auto;
     }
   
     iframe {
