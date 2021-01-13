@@ -1,0 +1,81 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#potes {
+max-width: 550px;
+margin: 0 auto;
+}
+
+.square {
+ width: 30%;
+ padding-bottom: 30%;
+ background: pink;
+ float: left;
+ margin: 1.66%;
+ border-radius: 15%;
+ transition: background 0.5s;
+ -webkit-transition: background 0.5s;
+ -moz-transition: background 0.5s;
+}
+
+#linha {
+	background-color: white;
+	height: 30px;
+	margin-bottom: 0.7%;
+	text-align: center;
+}
+
+.selected {
+	background-color: rgba(234, 118, 130, 1);
+	color: white;
+}
+
+button {
+	border: none;
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	color: rgba(234, 118, 130, 1);
+	font-weight: 999;
+	font-size: 15px;
+	background-color: transparent;
+	height: 100%;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background-color: rgba(234, 118, 130, 1);
+}
+
+h1 {
+ font-family: 'Quicksand', sans-serif;
+ color: white;
+ font-weight: 300;
+ text-align: center;
+ background-color: rgba(234, 118, 130, 1);
+ font-size: 30px;
+ margin: 0;
+ text-transform: uppercase;
+ line-height: 1;
+ padding: 20px 0;
+ }
+
+#queenColor {
+	font-size: 200%;
+}
+
+#message {
+ font-family: 'Quicksand', sans-serif;
+ color: rgba(234, 118, 130, 1);
+ font-weight: 600;
+ text-align: center;
+ display: inline-block;
+ width: 20%;
+ }
