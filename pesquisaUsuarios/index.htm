@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/trabalho.js" defer></script>
+  <script src="./js/materialize.min.js" defer></script>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+  <title>Desafio 1 - IGTI Bootcamp FullStack</title>
+</head>
+
+<body>
+  
+  <div class="card-panel lime accent-3">
+    <div class="container">
+      <h2 class="white-text">Pesquisa de Usuários</h2>
+    </div>
+  </div>
+  
+  <div class="container">
+
+    <div class="row">
+      <form class="col xl12 s12">
+        <button class="btn waves-effect" id="search" type="submit" disabled>
+          <span>Busca</span>
+        </button>
+        <div class="input-field col xl11 s9">
+          <input type="text" name="searchFor" id="searchFor" placeholder="Digite um nome...">
+        </div>  
+      </form>
+    </div>
+ 
+    <!-- =========================== USUÁRIOS =========================== -->
+    <div class="row">
+      <div class="col xl7 s8">
+        <div class="wrapping">
+           <h5>
+            <span id="numResults"></span>
+          </h5>
+          <div id="searchResults">
+          </div>
+        </div>
+      </div>
+ 
+      <!-- =========================== ESTATÍSTICAS =========================== -->
+      <div class="col xl5 s4">
+        <div class="wrapping">
+          <h5>
+            <span id="statsResults"></span>
+          </h5>
+          <div id="showStats">
+            <ul id="statsUl">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>  
+
+  </div>
+
+</body>

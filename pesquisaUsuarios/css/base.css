@@ -1,0 +1,52 @@
+.card-panel {
+   margin-top: 0 !important;
+}
+
+.wrapping {
+   border: 2px solid rgb(247, 243, 243);
+   border-radius: 1em;
+   background: rgb(247, 243, 243);
+   box-shadow: 1px 1px 10px 1px rgba(223, 216, 216, 0.815);
+   overflow: auto;
+}
+
+.fixMe {
+   display: inline-block;
+   transform: translate(10px, -22px);
+}
+.fixMeToo {
+   vertical-align: middle;
+}
+
+.row .col.s12 {
+   height: 11%;
+}
+
+.btn {
+   margin-top: 2.5%;
+   background-color: #c6ff00 !important;
+}
+
+/* label color */
+.input-field label {
+   color: #c6ff00;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #c6ff00;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #c6ff00 !important;
+   box-shadow: 0 1px 0 0 #c6ff00 !important;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #c6ff00 !important;
+   box-shadow: 0 1px 0 0 #c6ff00 !important;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #c6ff00 !important;
+   box-shadow: 0 1px 0 0 #c6ff00 !important;
+ }
