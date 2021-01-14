@@ -2,11 +2,19 @@
 
 include('conexao.php');
 
-$sql = $connect->prepare('SELECT F.nome as func_nome, F.genero as func_genero, F.dt_nascimento as func_dt_nascimento, F.dt_admissao as func_dt_admissao, F.salario as func_salario, F.id_departamento as func_id_departamento, F.id_funcionario as func_id_funcionario, D.nome as d_nome
-FROM FUNCIONARIOS AS F
-JOIN DEPARTAMENTOS AS D
-ON D.id_departamento = F.id_departamento 
-ORDER BY func_nome');
+$sql = $connect->prepare('SELECT 
+                            F.nome as func_nome, 
+                            F.genero as func_genero, 
+                            DATE_FORMAT(F.dt_nascimento, "%d/%m/%Y") as func_dt_nascimento, 
+                            DATE_FORMAT(F.dt_admissao, "%d/%m/%Y") as func_dt_admissao, 
+                            FORMAT(F.salario, 2, "de_DE") as func_salario, 
+                            F.id_departamento as func_id_departamento, 
+                            F.id_funcionario as func_id_funcionario, 
+                            D.nome as d_nome
+                            FROM FUNCIONARIOS AS F
+                            JOIN DEPARTAMENTOS AS D
+                            ON D.id_departamento = F.id_departamento 
+                            ORDER BY func_nome');
 $sql->execute();
 $result = $sql->fetchAll();
 
