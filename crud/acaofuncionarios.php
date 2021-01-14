@@ -14,7 +14,7 @@ if (isset($_REQUEST['acao'])) {
             $dt_nascimento = $_POST['nascimento'];
             $dt_admissao = $_POST['admissao'];
             $genero = $_POST['genero'];
-            $salario = $_POST['salario'];
+            $salario = str_replace(',', '.', str_replace('.', '', $_POST['salario']));
             $id_departamento = $_POST['departamento'];
 
             $sql = $connect->prepare("INSERT INTO FUNCIONARIOS (nome, dt_nascimento, dt_admissao, genero, salario, id_departamento) VALUES ('$nome', '$dt_nascimento', '$dt_admissao', '$genero', '$salario', '$id_departamento')");
@@ -28,7 +28,7 @@ if (isset($_REQUEST['acao'])) {
             $dt_nascimento = $_POST['nascimento'];
             $dt_admissao = $_POST['admissao'];
             $genero = $_POST['genero'];
-            $salario = $_POST['salario'];
+            $salario = str_replace(',', '.', str_replace('.', '', $_POST['salario']));
             $id_departamento = $_POST['departamento'];
             $id_funcionario = $_POST['id_funcionario'];
          
